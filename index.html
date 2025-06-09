@@ -673,7 +673,6 @@
     </section>
 
     <!-- Music section -->
-    <!-- Music section -->
 
     <section id="music" class="py-8 px-4 lg:px-0 overflow-hidden">
       <div class="text-center mb-10">
@@ -691,31 +690,40 @@
           data-aos-duration="2000"
         >
           <div
-            class="w-72 rounded-xl shadow-lg overflow-hidden bg-white text-gray-800"
+            class="w-72 md:w-full max-w-sm rounded-xl shadow-lg overflow-hidden bg-white text-gray-800"
           >
-            <div class="relative group">
+            <div class="relative">
               <img
                 src="img/dan.jpg"
                 alt="Album Art"
-                class="w-full h-full object-cover"
+                class="w-full h-auto object-cover"
               />
+            </div>
+
+            <div class="p-4 flex items-center justify-between">
+              <div>
+                <h3 class="text-lg font-semibold">Dan...</h3>
+                <p class="text-sm text-gray-600">Sheila on 7</p>
+              </div>
+
               <button
                 id="playBtn"
-                class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 lg:opacity-0"
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-[#a7c29e] text-white shadow-md transition-all duration-300 hover:scale-105 focus:outline-none"
               >
                 <svg
                   id="playIcon"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="w-12 h-12 text-white"
+                  class="w-7 h-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path d="M8 5v14l11-7z" />
                 </svg>
+
                 <svg
                   id="pauseIcon"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="w-12 h-12 text-white hidden"
+                  class="w-6 h-6 hidden"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -723,10 +731,7 @@
                 </svg>
               </button>
             </div>
-            <div class="p-4">
-              <h3 class="text-lg font-semibold">Dan...</h3>
-              <p class="text-sm text-gray-600">Sheila on 7</p>
-            </div>
+
             <audio
               id="audio"
               src="img/Sheila on 7 - Dan (Official Music Video).mp3"
