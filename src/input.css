@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Custom Font */
+  --font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-poppins: 'Poppins', 'sans-serif';
+  --font-boska: 'Boska', serif;
+  --font-great-vibes: 'Great Vibes', cursive;
+  --font-zodiak: 'Zodiak', serif;
+  --color-blue: #addbe6;
+  --color-brown: #eddeca;
+  --color-red: #ff746c;
+  --color-purple: #c9a0dc;
+  --color-pink: #fdb0c0;
+  --color-green: #bbf7d0;
+
+  /* Custom Colors */
+  --color-primary: #1a73e8; /* Contoh warna biru */
+  --color-secondary: #fbbc05; /* Contoh warna kuning */
+  --color-accent: #ea4335; /* Contoh warna aksen jika diperlukan */
+}
+
+.bg-card {
+  @apply bg-[#fdf6e3] border-[#d6c4a9];
+}
+
+/* Tambahkan ini ke file CSS Anda atau di dalam tag <style> */
+/* Ganti CSS sebelumnya dengan ini */
+
+.career-tag {
+  @apply bg-blue text-black px-3 py-1 rounded-xl border border-black;
+}
+
+.love-tag {
+  @apply bg-red text-black px-3 py-1 rounded-xl border border-black;
+}
+
+.health-tag {
+  @apply bg-green text-black px-3 py-1 rounded-xl border border-black;
+}
+
+.you-tag {
+  @apply bg-pink text-black px-3 py-1 rounded-xl border border-black;
+}
+
+.wishes-tag {
+  @apply bg-orange-300 text-black px-3 py-1 rounded-xl border border-black;
+}
